@@ -1,2 +1,2 @@
 # python - Algorithms and Data Structure
-파이썬을 이용한 자료구조와 문제해결기법
+파이썬으로 쉽게 풀어쓴 자료구조 책에 있는 연습문제와 실습문제 연습.
