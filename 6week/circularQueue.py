@@ -38,7 +38,7 @@ class CircularQueue:
         if self.front < self.rear:
             out = self.items[self.front+1:self.rear+1]  # 슬라이싱
         else:
-            out = self.items[self.front+1:self.rear+1] + self.items[0:self.rear+1]  # 슬라이싱
+            out = self.items[self.front+1:MAX_QSIZE] + self.items[0:self.rear+1]  # 슬라이싱
         print("[f=%s, r=%d] ==> " % (self.front, self.rear), out)
 
 
