@@ -33,7 +33,7 @@ palindrome(instr)
 # s = Stack()
 #
 # instr = instr.lower()
-# for ch in instr:  # 소문자로 변환
+# for ch in instr: 
 #     if ord(ch) < ord('a') or ord(ch) > ord('z'):  # 소문자가 아니면
 #         continue  # 건너뛰기
 #     s.push(ch)  # 스택 리스트에 추가
