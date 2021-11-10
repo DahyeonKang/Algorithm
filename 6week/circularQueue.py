@@ -5,7 +5,7 @@ class CircularQueue:
     def __init__(self):
         self.front = 0  # 큐의 front(전단) 위치
         self.rear = 0  # 큐의 rear(후단) 위치
-        self.items = [None] * MAX_QSIZE  # 항목 저장용 리스트 [ㅜㅐ
+        self.items = [None] * MAX_QSIZE  # 항목 저장용 리스트 
 
     def isEmpty(self):  # 공백상태
         return self.front == self.rear
@@ -42,13 +42,14 @@ class CircularQueue:
         print("[f=%s, r=%d] ==> " % (self.front, self.rear), out)
 
 
-q = CircularQueue()  # 원형큐 만들기. f=0, r=0 : 공백상태
-for i in range(8):  # 0~7 삽입. f=0, r=8
-    q.enqueue(i)
-q.display()
-for i in range(5):  # 4번까지 삭제. f=5, r=8
-    q.dequeue()
-q.display()
-for i in range(8, 14):  # 8~13 삽입. f=5, r=4 : 포화상태
-    q.enqueue(i)  # 참고로 배열[0]에도 값이 올 수 있다.
-q.display()
+if __name__ == "__main__":
+    q = CircularQueue()  # 원형큐 만들기. f=0, r=0 : 공백상태
+    for i in range(8):  # 0~7 삽입. f=0, r=8
+        q.enqueue(i)
+    q.display()
+    for i in range(5):  # 4번까지 삭제. f=5, r=8
+        q.dequeue()
+    q.display()
+    for i in range(8, 14):  # 8~13 삽입. f=5, r=4 : 포화상태
+        q.enqueue(i)  # 참고로 배열[0]에도 값이 올 수 있다.
+    q.display()
